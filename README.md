@@ -2,7 +2,7 @@
 
 This repository contains a small multi-page portfolio site for Nandan MR. It includes:
 
-- `portfolio.html` — homepage (projects, skills, contact)
+- `index.html` — homepage (projects, skills, contact)
 - `resume.html` — printable resume
 - `about.html` — short bio
 - `assets/css/styles.css` — styles
@@ -10,13 +10,13 @@ This repository contains a small multi-page portfolio site for Nandan MR. It inc
 
 Preview locally
 ---------------
-Open `portfolio.html` in a browser directly, or run a simple HTTP server (recommended):
+Open `index.html` in a browser directly, or run a simple HTTP server (recommended):
 
 PowerShell (if Python 3 installed):
 
 ```powershell
 python -m http.server 8000
-# then open http://localhost:8000/portfolio.html
+# then open http://localhost:8000/
 ```
 
 Hosting (GitHub Pages)
