@@ -12,7 +12,23 @@
       .site-header, .site-footer, .nav-toggle, .main-nav { display:none }
       .container { width: 100%; }
     }
-    .resume-header { display:flex; justify-content:space-between; align-items:center; }
+    .resume-header { display:flex; justify-content:space-between; align-items:flex-start; }
+    .resume section { margin: 1.5rem 0; }
+    .resume-skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+    .skill-tag { 
+      display: inline-block;
+      background: rgba(77, 143, 255, 0.2);
+      border: 1px solid var(--accent);
+      color: var(--accent-light);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .skill-tag:hover {
+      background: rgba(77, 143, 255, 0.4);
+      transform: translateY(-2px);
+    }
   </style>
 </head>
 <body>
@@ -45,11 +61,26 @@
 
     <section>
       <h3>Technical Skills</h3>
-      <ul>
-        <li>Python, C, C++, Java, SQL, HTML, CSS, JavaScript</li>
-        <li>Pandas, NumPy, Scikit-learn, Prophet, Plotly, Matplotlib, Streamlit</li>
-        <li>Docker, Git, Nextcloud, Pi-hole, Firebase</li>
-      </ul>
+      <div class="resume-skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Scikit-learn</span>
+        <span class="skill-tag">Prophet</span>
+        <span class="skill-tag">Plotly</span>
+        <span class="skill-tag">Streamlit</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Nextcloud</span>
+        <span class="skill-tag">Firebase</span>
+      </div>
     </section>
 
     <section>

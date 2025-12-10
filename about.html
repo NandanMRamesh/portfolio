@@ -5,6 +5,44 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Bio — Nandan MR</title>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .about h2 {
+      background:linear-gradient(135deg, var(--accent-light) 0%, var(--accent) 50%, var(--success) 100%);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      background-clip:text;
+      font-size: 2rem;
+    }
+    .about-intro {
+      background:rgba(30, 58, 95, 0.6);
+      backdrop-filter:blur(5px);
+      padding:2rem;
+      border-radius:10px;
+      border:1px solid rgba(77, 143, 255, 0.2);
+      margin-bottom:2rem;
+    }
+    .interests-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .interest-card {
+      background:rgba(30, 58, 95, 0.5);
+      border-left:4px solid var(--accent);
+      padding:1.5rem;
+      border-radius:8px;
+      transition:all 0.3s ease;
+    }
+    .interest-card:hover {
+      background:rgba(30, 58, 95, 0.8);
+      transform:translateY(-5px);
+      box-shadow:0 8px 25px rgba(11, 95, 255, 0.15);
+    }
+    .interest-card strong {
+      color: var(--accent-light);
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -19,7 +57,7 @@
   </header>
 
   <main class="container about">
-    <section>
+    <section class="about-intro">
       <h2>Bio</h2>
       <p>I am a Computer Science engineering student based in Chikmagalur, India. I enjoy turning ideas into real systems — experimenting with small AI models, building responsive web apps, and managing self-hosted services with Docker.</p>
       <p>Currently exploring applied machine learning, time series forecasting, and improving my skills with production tooling like Docker and CI/CD.</p>
@@ -27,12 +65,24 @@
 
     <section>
       <h3>Interests</h3>
-      <ul>
-        <li>Machine Learning & NLP</li>
-        <li>Self-hosting and Infrastructure</li>
-        <li>Data Visualization and Dashboards</li>
-        <li>Open-source collaboration</li>
-      </ul>
+      <div class="interests-grid">
+        <div class="interest-card">
+          <strong>Machine Learning & NLP</strong>
+          <p>Exploring practical applications of ML models, sentiment analysis, and time series forecasting.</p>
+        </div>
+        <div class="interest-card">
+          <strong>Self-hosting & Infrastructure</strong>
+          <p>Building personal servers with Docker, managing cloud infrastructure, and learning DevOps practices.</p>
+        </div>
+        <div class="interest-card">
+          <strong>Data Visualization</strong>
+          <p>Creating interactive dashboards and visual representations of complex data using modern tools.</p>
+        </div>
+        <div class="interest-card">
+          <strong>Open-source Collaboration</strong>
+          <p>Contributing to meaningful projects and collaborating with developers across the globe.</p>
+        </div>
+      </div>
     </section>
   </main>
 
